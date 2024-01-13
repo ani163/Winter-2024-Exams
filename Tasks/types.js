@@ -8,6 +8,7 @@ const countTypes = (arr) => {
     string: 0,
     boolean: 0,
   };
+
   for (const item of arr) {
     const itemType = typeof item;
     types[itemType]++;
