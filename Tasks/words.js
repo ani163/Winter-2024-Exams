@@ -2,7 +2,7 @@
 
 // Count words in a string
 
-const countWords = function (inputString) {
+const countWords = (inputString) => {
   let numberOfWords = 0;
   flag = false;
   for (c of inputString) {
