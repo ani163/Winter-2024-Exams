@@ -12,9 +12,8 @@ const countTypes = function (arr) {
     const itemType = typeof item;
     types[itemType]++;
   }
-  arr.push('string');
+
   return types;
-  arr.length;
 };
 
 module.exports = countTypes;
