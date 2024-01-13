@@ -1,6 +1,7 @@
 'use strict';
 
 // Find an intersection of two dictionaries
+// Fixed
 
 const findIntersection = (object1, object2) => {
   const keys1 = Object.keys(object1);
@@ -10,7 +11,7 @@ const findIntersection = (object1, object2) => {
       delete object1[key];
     }
   }
-  
+
   return object1;
 };
 
