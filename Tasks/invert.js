@@ -1,6 +1,7 @@
 'use strict';
 
 // Reverse an array, you can't use .reverse()
+// Fixed
 
 const reverseArray = (arr) => {
   const reversedArray = [];
