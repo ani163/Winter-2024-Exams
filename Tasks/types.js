@@ -1,6 +1,7 @@
 'use strict';
 
 // Count types in an array
+// Fixed
 
 const countTypes = (arr) => {
   const types = {
