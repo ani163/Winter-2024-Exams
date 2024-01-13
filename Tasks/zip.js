@@ -5,8 +5,8 @@
 const zipArrays = function (arr1 = [], arr2 = []) {
   let i = 0;
   j = 0;
-  for (elem of arr2) {
-    cell = [arr1[i++], elem];
+  for (const elem of arr2) {
+    let cell = [arr1[i++], elem];
     if (i < j) {
       delete arr1[i++];
     } else {
