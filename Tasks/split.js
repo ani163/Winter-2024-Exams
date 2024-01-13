@@ -2,11 +2,11 @@
 
 // Split an array into two parts
 
-const split_Array = (index, array) => {
-  const begin = array.slice(0, index);
+const splitArray = (index, array) => {
+  const beginning = array.slice(0, index);
   const len = array.length;
   array = array.slice(index, len);
-  return [begin, array];
+  return [beginning, array];
 };
 
-module.exports = split_Array;
+module.exports = splitArray;
