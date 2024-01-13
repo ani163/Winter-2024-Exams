@@ -10,6 +10,7 @@ const findIntersection = (object1, object2) => {
       delete object1[key];
     }
   }
+  
   return object1;
 };
 
