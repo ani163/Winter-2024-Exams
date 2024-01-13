@@ -3,17 +3,6 @@
 // Count words in a string
 // Fixed
 
-const countWords = (inputString) => {
-  const wordsArray = inputString.trim().split(/\s+/);
-  let numberOfWords = 0;
-
-  for (const word of wordsArray) {
-    if (word !== '') {
-      numberOfWords++;
-    }
-  }
-
-  return numberOfWords;
-};
+const countWords = (inputString) => inputString.trim().split(/\s+/).filter(word => word !== '').length;
 
 module.exports = countWords;
