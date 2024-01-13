@@ -1,6 +1,7 @@
 'use strict';
 
 // Split an array into two parts
+// Fixed
 
 const splitArray = (index, array) => {
   const beginning = array.slice(0, index);
