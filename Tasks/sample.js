@@ -1,6 +1,7 @@
 'use strict';
 
 // Get one random element from an array
+// Fixed
 
 const getRandomElement = (arr) => {
   const randomIndex = Math.floor(Math.random() * arr.length);
