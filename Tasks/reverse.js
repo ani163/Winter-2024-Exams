@@ -1,6 +1,7 @@
 'use strict';
 
 // Reverse dict, exchange keys and values
+// Fixed
 
 const reverseDictionary = (data) => {
   const keys = Object.keys(data);
