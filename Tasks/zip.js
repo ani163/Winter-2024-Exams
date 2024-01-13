@@ -3,18 +3,18 @@
 // Zip two arrays, [1, 2] and [3, 4] -> [[1, 3], [2, 4]]
 
 const zipArrays = function (arr1 = [], arr2 = []) {
+  const result = [];
   let i = 0;
-  j = 0;
+
   for (const elem of arr2) {
-    let cell = [arr1[i++], elem];
-    if (i < j) {
-      delete arr1[i++];
-    } else {
-      (() => (arr2[j++] = cell))();
+    const cell = [arr1[i++], elem];
+
+    if (cell[0] !== undefined) {
+      result.push(cell);
     }
-    if (cell[0] == undefined) arr2.length -= 1
   }
-  return arr2;
+
+  return result;
 };
 
 module.exports = zipArrays;
