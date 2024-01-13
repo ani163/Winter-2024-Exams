@@ -4,6 +4,7 @@
 
 const reverseDictionary = (data) => {
   const keys = Object.keys(data);
+  const reversedData = {};
   keys.forEach((_) => {
     const v1 = data[_];
     data[v1] = _;
