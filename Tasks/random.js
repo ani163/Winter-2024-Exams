@@ -1,3 +1,5 @@
+'use strict'
+
 // Generate random integer value in given range
 
 Random = (min, max) => {
