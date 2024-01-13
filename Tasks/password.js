@@ -1,6 +1,7 @@
 'use strict';
 
 // Generate random password
+// Fixed
 
 const generatePassword = (alphabet, length) => {
   let password = '';
