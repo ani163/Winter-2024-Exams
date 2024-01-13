@@ -3,6 +3,7 @@
 // Count words in a string
 
 const countWords = (inputString) => {
+  const wordsArray = inputString.trim().split(/\s+/);
   let numberOfWords = 0;
   flag = false;
   for (c of inputString) {
