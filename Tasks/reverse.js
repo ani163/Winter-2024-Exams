@@ -5,12 +5,11 @@
 const reverseDictionary = (data) => {
   const keys = Object.keys(data);
   const reversedData = {};
-  keys.forEach((_) => {
-    const v1 = data[_];
-    data[v1] = _;
-    delete data[_];
-  });
-  return data;
+  for (const key of keys) {
+    const value = data[key];
+    reversedData[value] = key;
+  }
+  return reversedData;
 };
 
 module.exports = reverseDictionary;
