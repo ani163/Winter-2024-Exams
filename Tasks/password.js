@@ -3,12 +3,15 @@
 // Generate random password
 // Fixed
 
+const getRandomIndex = (max) => {
+  return Math.floor(Math.random() * max);
+};
+
 const generatePassword = (alphabet, length) => {
   let password = '';
 
   for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * alphabet.length);
-    password += alphabet[randomIndex];
+    password += alphabet[getRandomIndex(alphabet.length)];
   }
 
   return password;
