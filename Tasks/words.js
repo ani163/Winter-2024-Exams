@@ -2,8 +2,8 @@
 
 // Count words in a string
 
-Words = function (s) {
-  number_of_words_in_s = 0;
+const Words = function (s) {
+  let number_of_words_in_s = 0;
   flag = false;
   for (c of s) {
     if (!flag) {
