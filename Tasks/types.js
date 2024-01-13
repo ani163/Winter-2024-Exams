@@ -1,3 +1,5 @@
+'use strict';
+
 // Count types in an array
 
 types_ = function (s) {
