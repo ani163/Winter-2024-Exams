@@ -2,7 +2,7 @@
 
 // Count types in an array
 
-const countTypes = function (arr) {
+const countTypes = (arr) => {
   const types = {
     number: 0,
     string: 0,
